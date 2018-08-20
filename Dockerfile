@@ -1,4 +1,4 @@
-FROM dockcross/linux-armv7
+FROM dockcross/windows-64
 
 ENV DEFAULT_DOCKCROSS_IMAGE b2beyond/docker-windows-64-boost
 
