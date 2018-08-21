@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM debian:8
 #Use http://pkg.mxe.cc/
 #First add the repository and install the static gcc compiler. This ensures that everything basic is setup.
 RUN echo "deb http://pkg.mxe.cc/repos/apt/debian wheezy main" > /etc/apt/sources.list.d/mxeapt.list && \
