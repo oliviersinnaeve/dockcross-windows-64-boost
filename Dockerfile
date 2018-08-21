@@ -9,6 +9,7 @@ RUN echo "deb http://pkg.mxe.cc/repos/apt/debian wheezy main" > \
    apt-get install -y mxe-i686-w64-mingw32.static \
    nsis \
    zip \
+   curl \
    libtool
 #All packages!
 #RUN apt-get update && wget -O - http://pkg.mxe.cc/repos/apt/debian/dists/jessie/main/binary-amd64/Packages | grep Package | awk '{print $2}' | xargs apt-get install -y
