@@ -2,6 +2,7 @@ FROM debian:8
 #Use http://pkg.mxe.cc/
 #First add the repository and install the static gcc compiler. This ensures that everything basic is setup.
 USER root
+RUN apt-get install -yy apt-utils
 RUN echo "deb http://pkg.mxe.cc/repos/apt/debian wheezy main" > /etc/apt/sources.list.d/mxeapt.list
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D43A795B73B16ABE9643FE1AFD8FFF16DB45C6AB
 RUN apt-get update
