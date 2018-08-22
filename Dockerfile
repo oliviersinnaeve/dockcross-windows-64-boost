@@ -12,4 +12,5 @@ RUN whereis mxe
 RUN cd /usr/bin && rm cmake cpack
 RUN ln -s /usr/lib/mxe/usr/bin/x86_64-w64-mingw32.static-cmake cmake
 RUN ln -s /usr/lib/mxe/usr/bin/x86_64-w64-mingw32.static-cpack cpack
-RUN export PATH=${PATH}:/usr/lib/mxe/usr/bin
+
+ENV PATH="/usr/lib/mxe/usr/bin:${PATH}"
