@@ -1,4 +1,4 @@
-FROM debian:8
+FROM ubuntu:16.04
 #Use http://pkg.mxe.cc/
 #First add the repository and install the static gcc compiler. This ensures that everything basic is setup.
 USER root
